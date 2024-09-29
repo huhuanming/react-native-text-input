@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 /**
  * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
@@ -53,6 +55,15 @@ if (Platform.OS === 'android') {
   AndroidTextInput = require('./TextInputViewNativeComponent').default;
   AndroidTextInputCommands =
     require('react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent').Commands;
+} else if (Platform.OS === 'ios') {
+  RCTSinglelineTextInputView =
+    require('react-native/Libraries/Components/TextInput/RCTSingelineTextInputNativeComponent').default;
+  RCTSinglelineTextInputNativeCommands =
+    require('react-native/Libraries/Components/TextInput/RCTSingelineTextInputNativeComponent').Commands;
+  RCTMultilineTextInputView =
+    require('react-native/Libraries/Components/TextInput/RCTMultilineTextInputNativeComponent').default;
+  RCTMultilineTextInputNativeCommands =
+    require('react-native/Libraries/Components/TextInput/RCTMultilineTextInputNativeComponent').Commands;
 }
 
 export type ChangeEvent = SyntheticEvent<

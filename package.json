@@ -1,5 +1,5 @@
 {
-  "name": "react-native-text-input",
+  "name": "@onekeyfe/react-native-text-input",
   "version": "0.1.0",
   "description": "text-input",
   "source": "./src/index.tsx",
@@ -39,7 +39,7 @@
     "example": "yarn workspace react-native-text-input-example",
     "test": "jest",
     "typecheck": "tsc",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
     "release": "release-it"
