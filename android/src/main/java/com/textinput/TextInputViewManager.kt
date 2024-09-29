@@ -22,7 +22,7 @@ class TextInputViewManager() : ReactTextInputManager() {
     override fun getName(): String = REACT_CLASS
 
     override fun createViewInstance(context: ThemedReactContext): ReactEditText {
-        val editText = ReactEditText(context)
+        val editText = TextInputView(context)
         val inputType = editText.inputType
         editText.inputType = inputType and InputType.TYPE_TEXT_FLAG_MULTI_LINE.inv()
         editText.returnKeyType = "done"

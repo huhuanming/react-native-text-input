@@ -1,5 +1,5 @@
 import { StyleSheet, TextInput, View } from 'react-native';
-import { TextInputView } from 'react-native-text-input';
+import TextInputView from '../../src/AndroidInput.js';
 
 export default function App() {
   return (
